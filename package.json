@@ -1,14 +1,19 @@
 {
+  "homepage": "https://justkooker.github.io/new_test",
   "name": "my-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "gh-pages": "^6.3.0",
     "sass": "^1.89.2",
     "vite": "^7.0.4"
   },
