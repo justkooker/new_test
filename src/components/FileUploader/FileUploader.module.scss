@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  min-width: 250px;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input {
+  display: none; /* скрываем input */
+}
+
+.customInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #a02eec, #3c7ce2);
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position 0.5s ease;
+}
+
+.customInput:hover {
+  background-position: right;
+}
